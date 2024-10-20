@@ -34,7 +34,7 @@ jobs:
         tags: pantigon/microsoft-graph-smtp-relay  # Replace with your Docker Hub username, repository, and tag
 
     - name: Sync README to Docker Hub
-      uses: peter-evans/dockerhub-description@v2
+      uses: peter-evans/dockerhub-description@v4
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
